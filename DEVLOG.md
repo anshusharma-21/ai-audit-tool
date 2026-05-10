@@ -11,3 +11,18 @@
 **Blockers / what I'm stuck on:** None.
 
 **Plan for tomorrow:** Start collecting official pricing data for required AI tools and build the core audit engine logic.
+
+
+
+
+
+## Day 2 — 2026-05-10
+**Hours worked:** 4
+**What I did:**
+- Researched and verified latest pricing for Cursor, Copilot, and ChatGPT.
+- Built the core audit engine logic in `engine.ts`.
+- Created the pricing data structure in `pricing.ts`.
+- Wrote 5 test cases in `TESTS.md` to verify calculation accuracy.
+**What I learned:** How to structure pricing data for scalability.
+**Blockers:** Finding official enterprise pricing links (Decided to use estimated averages).
+**Plan for tomorrow:** Build the multi-step input form.
