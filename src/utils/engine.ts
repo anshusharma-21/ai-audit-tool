@@ -1,17 +1,16 @@
-export const calculateAudit = (tool: string, plan: string, seats: number) => {
+import { TOOLS_DATABASE } from './pricing';
 
-  if (tool === 'chatgpt' && plan === 'team' && seats === 1) {
-    return {
-      recommendation: "Downgrade to ChatGPT Plus",
-      savings: 5, 
-      reason: "Team plan requires minimum 2 seats. You are paying for a seat you don't use."
-    };
-  }
+export const calculateAudit = (toolId: string, seats: number) => {
   
-  
+  const tool = TOOLS_DATABASE.find(t => t.id === toolId);
+  const price = tool ? tool.price : 20; 
+
+  const monthlyCost = price * seats;
+  const savings = Math.round(monthlyCost * 0.3); 
+
   return {
-    recommendation: "Switch to Credex Credits",
-    savings: 15, 
-    reason: "Credex offers 30% discount on these credits."
+    savings: savings,
+    recommendation: `Switch to Credex Unified Billing for ${tool?.name}`,
+    reason: `You are currently paying $${monthlyCost}/mo. Credex's bulk-buying power reduces this by 30%.`
   };
 };
