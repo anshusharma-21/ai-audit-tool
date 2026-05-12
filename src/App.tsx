@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { calculateAudit } from './utils/engine';
 import { TOOLS_DATABASE } from './utils/pricing';
 import { supabase } from './lib/supabase';
-import { History, LayoutDashboard, FileText, X, CheckCircle, Sun, Moon, Search, Zap, ShieldCheck, Activity, TrendingUp } from 'lucide-react';
+import { History,  FileText, X, CheckCircle, Sun, Moon,  Zap, ShieldCheck, Activity, TrendingUp } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
