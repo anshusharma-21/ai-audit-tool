@@ -54,7 +54,7 @@ Debugged and resolved Row Level Security (RLS) policy blockers that were prevent
 **Plan for tomorrow:** Finalize UI/UX polish (Glassmorphism theme) and deploy the project to Vercel for the final submission.
 
 
-## Day 3 — 2026-05-11
+## Day 4— 2026-05-12
 **Hours worked:** 8
 **What I did:**
 
