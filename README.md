@@ -1,73 +1,21 @@
-# React + TypeScript + Vite
+# CREDEX AUDIT ENGINE 2.0 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance lead-generation tool built for **Credex** to identify overspending in startup AI stacks. It calculates real-time savings (up to 30%) and provides professional audit reports.
 
-Currently, two official plugins are available:
+## 🔗 Live Deployment
+**URL:** [Yahan apna Vercel ya Netlify ka link paste karein]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Screenshots
+![Dashboard Preview]([Yahan image link ya path dalein])
 
-## React Compiler
+## 🛠 Key Decisions & Trade-offs
+1. **No-Login Architecture:** Lowered entry friction by allowing instant audits without signup, as per MVP goals.
+2. **Deterministic Math:** Hardcoded pricing logic in TypeScript for 100% financial accuracy instead of relying on LLM hallucinations for math.
+3. **Interactive UI:** Used a custom range slider for seat selection to provide instant visual ROI feedback.
+4. **Professional Dark Mode:** Chose a deep slate glassmorphism theme to appeal to high-end enterprise clients.
+5. **Robust Lead Capture:** Integrated Supabase for zero-latency data storage and lead tracking.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Quick Start
+1. **Install Dependencies:**
+   ```bash
+   npm install
