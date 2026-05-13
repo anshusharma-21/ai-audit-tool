@@ -13,7 +13,6 @@ graph TD
 ```    
 
 
-
 Tech Stack Details
 Frontend: React 19 + TypeScript + Tailwind 4.
 

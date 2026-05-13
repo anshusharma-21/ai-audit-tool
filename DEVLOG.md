@@ -32,7 +32,7 @@ Reason: Focused on college assignments and academic schedule.
 
 
 ## Day 3 — 2026-05-11
-**Hours worked:** 4
+**Hours worked:** 5
 **What I did:**
 
 Integrated Supabase SDK (@supabase/supabase-js) for backend connectivity.
@@ -75,10 +75,27 @@ I learned that documentation is just as critical as the code itself, especially 
 
 I gained a better understanding of YAML syntax and the importance of correct indentation for GitHub Actions.
 
-
 **Blockers:**
 Encountered syntax errors in the CI/CD YAML file. These were resolved by correcting the indentation and structure of the workflow file.
 
-
 **Plan for tomorrow:**
 Submit the final links (GitHub and Live URL) and monitor the GitHub Actions tab for the final green checkmark.
+
+
+
+## Day 5— 2026-05-13
+**Hours worked:** 6
+**What I did:**
+Viral Loop Implementation: Unique Public URL functionality add ki jisse har audit ka ek specific link generate hota hai (?id=uuid). Isse shared links par audit data bina login ke dekha ja sakta hai.
+
+AI-Generated Summary: Dynamic strategy summary logic implement kiya jo user ke input ke basis par personalized advice dikhata hai.
+
+History Sidebar Fix: State management issues solve kiye aur history modal ko fully functional banaya taaki user pichle audits easily dekh sake.
+
+Share Functionality: One-click copy-to-clipboard feature add kiya jisse professional audit links turant share kiye ja sakein.
+
+Final UI Polishing: Layout ko optimize kiya, icons update kiye (Share2 icon), aur ensure kiya ki logic aur design seamless kaam kar rahe hain.
+
+**What I learned:** React Router ke bina dynamic query parameters (URLSearchParams) kaise handle karte hain aur complex states ko clean kaise rakhte hain.
+
+**Blockers:** Faced an issue where the history modal was deleted during a code update, but successfully restored it by merging the old and new logic.
